@@ -1,3 +1,3 @@
 export const MyComposition = () => {
-	return null;
+  return <p className="bg-red-900">Bonjour</p>;
 };
