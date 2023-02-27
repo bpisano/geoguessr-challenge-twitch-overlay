@@ -1,5 +1,5 @@
 import { Monument } from './monument';
-import { Position } from './potision';
+import { Position } from './position';
 import { Size } from './size';
 
 export interface MonumentProperty {

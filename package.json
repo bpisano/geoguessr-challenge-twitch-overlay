@@ -5,8 +5,10 @@
   "scripts": {
     "start": "remotion preview",
     "build": "remotion render MyComp out/video.mp4",
-    "build-transparent": "remotion render --image-format=png --pixel-format=yuva420p --codec=vp8 MyComp out/video.webm",
+    "build:gif": "remotion render --image-format=png --codec=gif --every-nth-frame 3 Video out/video.gif",
+    "build:transparent": "remotion render --image-format=png --pixel-format=yuva420p --codec=vp9 Video out/video.webm",
     "upgrade": "remotion upgrade",
+    "lint": "eslint src --ext ts,tsx,js,jsx",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },
   "repository": {},
@@ -15,7 +17,14 @@
     "@remotion/eslint-config": "^3.0.0",
     "@types/react": "^18.0.26",
     "@types/web": "^0.0.86",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.1",
     "typescript": "^4.9.4"
   },
