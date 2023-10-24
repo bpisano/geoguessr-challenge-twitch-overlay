@@ -6,7 +6,7 @@
     "start": "remotion preview",
     "build": "remotion render MyComp out/video.mp4",
     "build:gif": "remotion render --image-format=png --codec=gif --every-nth-frame 3 Video out/video.gif",
-    "build:transparent": "remotion render --image-format=png --pixel-format=yuva420p --codec=vp9 Video out/video.webm",
+    "build:transparent": "remotion render Video --image-format=png --pixel-format=yuva420p --codec=vp9 out/video.webm",
     "upgrade": "remotion upgrade",
     "lint": "eslint src --ext ts,tsx,js,jsx",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
@@ -14,9 +14,9 @@
   "repository": {},
   "license": "UNLICENSED",
   "devDependencies": {
-    "@remotion/eslint-config": "^3.0.0",
+    "@remotion/eslint-config": "^4.0.54",
     "@types/react": "^18.2.31",
-    "@types/web": "^0.0.86",
+    "@types/web": "^0.0.119",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.52.0",
@@ -29,14 +29,14 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@remotion/cli": "3.3.54",
+    "@remotion/cli": "^4.0.54",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "postcss-loader": "^7.3.3",
-    "postcss-preset-env": "^8.0.1",
+    "postcss-preset-env": "^9.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "3.3.54",
+    "remotion": "^4.0.54",
     "tailwindcss": "^3.3.3"
   },
   "packageManager": "npm@8.7.0"
